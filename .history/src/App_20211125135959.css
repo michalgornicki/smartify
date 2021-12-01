@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(62, 146, 255);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+}
+
+.navbar-item{
+
+}

@@ -1,0 +1,12 @@
+body{
+    background-color: blue;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-item{
+
+}

@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(62, 146, 255);
+    margin: 0;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    height: 10vh;
+    width: 90%;
+    line-height: 10vh;
+    
+}
+
+.navbar-item-left{
+ margin-right: 25%;
+}
+
+.navbar-item-right{
+    margin-left: 25%;
+   }

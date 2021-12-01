@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(62, 146, 255);
+    margin: 0;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    height: 10vh;
+    line-height: 10vh;
+    
+}
+
+.navbar-item-left{
+ width: 25%;
+}
+
+.navbar-item-right{
+    width: 5%;
+    text-align: right;
+   }
