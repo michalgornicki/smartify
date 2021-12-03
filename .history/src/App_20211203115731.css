@@ -386,14 +386,6 @@ a {
   display: none;
 }
 
-.solution{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.solution-item{
-  width: 50%;
-}
 
 @media only screen and (max-width: 800px) {
 
@@ -480,40 +472,16 @@ a {
 
   .icon {
     width: 16vmin;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 2vmin;
+    margin-right: 3vmin;
   }
 
   .text-container-column {
     width: 95%;
-    display: block;
-    margin: auto;
   }
 
   .small-header {
     font-weight: 600;
     font-size: 7vmin;
   }
-
-  .font-small{
-    font-size: 6vmin;
-  }
-
-  .font-smaller{
-    font-size: 4vmin;
-  }
-
-  .posts-container{
-    flex-direction: column;
-  }
-  
-.solution{
-  flex-direction: column;
-}
-
-.solution-item{
-  width: 100%;
-}
 
 }

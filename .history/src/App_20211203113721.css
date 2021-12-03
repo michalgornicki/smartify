@@ -386,14 +386,6 @@ a {
   display: none;
 }
 
-.solution{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.solution-item{
-  width: 50%;
-}
 
 @media only screen and (max-width: 800px) {
 
@@ -407,113 +399,6 @@ a {
     display: block;
   }
 
-  .navigation{
-    position: absolute;
-    top: 20vmin;
-    left: 0;
-    padding-left: 3vmin;
-    font-size: 4vmin;
-    flex-direction: column;
-    height: 60vh;
-    width: 100vw;
-    background-color: white;
-  }
-
-  .navbar-item{
-    font-size: 8vmin;
-  }
-
-  .text-and-image-container {
-    width: 100%;
-  }
-
-  .text-container{
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-
-  .image-phone{
-    display: none;
-  }
-
-  .header{
-    text-align: center;
-    font-size: 9vmin;
-  }
-
-  .footer{
-    text-align: center;
-    font-size: 6vmin;
-  }
-
-  .input-text{
-    font-size: 5vmin;
-    margin: auto;
-    margin-top: 15vmin;
-    display: block;
-    padding: 3vmin;
-  }
-
-  .button {
-    font-size: 5vmin;
-    width: fit-content;
-    border: 2px solid rgb(230, 230, 230);
-    border-radius: 0.5vmin;
-    padding: 1.5vmin;
-    padding-left: 2vmin;
-    padding-right: 2vmin;
-    font-weight: 400;
-    cursor: pointer;
-    margin: auto;
-    margin-top: 5vmin;
-    display: block;
-  }
-
-  .opinion{
-    font-size: 4.5vmin;
-  }
-
-  .image-phone-small {
-    display: none;
-  }
-
-  .icon {
-    width: 16vmin;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 2vmin;
-  }
-
-  .text-container-column {
-    width: 95%;
-    display: block;
-    margin: auto;
-  }
-
-  .small-header {
-    font-weight: 600;
-    font-size: 7vmin;
-  }
-
-  .font-small{
-    font-size: 6vmin;
-  }
-
-  .font-smaller{
-    font-size: 4vmin;
-  }
-
-  .posts-container{
-    flex-direction: column;
-  }
-  
-.solution{
-  flex-direction: column;
-}
-
-.solution-item{
-  width: 100%;
-}
+  .navi
 
 }

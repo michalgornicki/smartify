@@ -26,8 +26,6 @@ import avatar12 from "./avatar12.png";
 import postPhoto1 from "./post-photo1.jpg";
 import postPhoto2 from "./post-photo2.jpg";
 import postPhoto3 from "./post-photo3.jpg";
-import menu from "./menu.png";
-import menuClose from "./menu-close.png";
 import Fade from "react-reveal/Fade";
 
 function App() {
@@ -55,29 +53,17 @@ function App() {
           ""
         )}
 
-        {!toggleNavbar && window.innerWidth > 800 ? (
-          <div className="navbar-item button navbar-item-button">
-            Get started
-          </div>
+        {toggleNavbar || window.innerWidth > 800 ? (
+        <div className="navbar-item button navbar-item-button">Get started</div>
         ) : (
           ""
         )}
 
-        {toggleNavbar ? (
-          <img
-            className="navbar-icon"
-            src={menuClose}
-            onClick={() => setToggleNavbar(false)}
-            alt=""
-          />
-        ) : (
-          <img
-            className="navbar-icon"
-            src={menu}
-            onClick={() => setToggleNavbar(true)}
-            alt=""
-          />
-        )}
+        {toogleNavbar ?
+          <img className="navbar-icon" src={menuClose} onClick={() => setToogleNavbar(false)} alt="" /> :
+          <img className="navbar-icon" src={menu} onClick={() => setToogleNavbar(true)} alt="" />
+        }
+
       </div>
 
       <div className="container-1">
@@ -352,8 +338,8 @@ function App() {
               </p>
             </div>
 
-            <div className="solution margin-bottom-10">
-              <div className="solution-item margin-bottom-10">
+            <div className="flex flex-wrap margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-blue"
                   src={phones}
@@ -368,7 +354,7 @@ function App() {
                   </div>
                 </p>
               </div>
-              <div className="solution-item margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-green"
                   src={cloud}
@@ -384,7 +370,7 @@ function App() {
                   </div>
                 </p>
               </div>
-              <div className="solution-item margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-orange"
                   src={analytics}
@@ -399,7 +385,7 @@ function App() {
                   </div>
                 </p>
               </div>
-              <div className="solution-item margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-red"
                   src={upgrade}

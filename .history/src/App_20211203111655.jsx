@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import phone from "./phone.png";
 import phoneSmall from "./phoneSmall.png";
@@ -26,64 +26,27 @@ import avatar12 from "./avatar12.png";
 import postPhoto1 from "./post-photo1.jpg";
 import postPhoto2 from "./post-photo2.jpg";
 import postPhoto3 from "./post-photo3.jpg";
-import menu from "./menu.png";
-import menuClose from "./menu-close.png";
 import Fade from "react-reveal/Fade";
 
 function App() {
-  const [toggleNavbar, setToggleNavbar] = useState(false);
-
   return (
     <div className="wrapper">
       <div className="navbar">
-        <a href="#top">
-          <div className="navbar-item navbar-item-logo">Smartify</div>
-        </a>
-        {toggleNavbar || window.innerWidth > 800 ? (
-          <div className="navigation">
-            <a href="#container-3">
-              <div className="navbar-item">Solution</div>
-            </a>
-            <a href="#container-6">
-              <div className="navbar-item">Features</div>
-            </a>
-            <a href="#container-5">
-              <div className="navbar-item">Blog</div>
-            </a>
-          </div>
-        ) : (
-          ""
-        )}
-
-        {!toggleNavbar && window.innerWidth > 800 ? (
-          <div className="navbar-item button navbar-item-button">
-            Get started
-          </div>
-        ) : (
-          ""
-        )}
-
-        {toggleNavbar ? (
-          <img
-            className="navbar-icon"
-            src={menuClose}
-            onClick={() => setToggleNavbar(false)}
-            alt=""
-          />
-        ) : (
-          <img
-            className="navbar-icon"
-            src={menu}
-            onClick={() => setToggleNavbar(true)}
-            alt=""
-          />
-        )}
+        <a href="#top"><div className="navbar-item navbar-item-logo">Smartify</div></a>
+        <div className="navigation">
+          <a href="#container-3"><div className="navbar-item">Solution</div></a>
+          <a href="#container-6"><div className="navbar-item">Features</div></a>
+          <a href="#container-5"><div className="navbar-item">Blog</div></a>
+        </div>
+        <div className="navbar-item button navbar-item-button">Get started</div>
       </div>
 
       <div className="container-1">
         <div className="text-and-image-container">
           <div className="text-container margin-top-30">
-            <div className="header">Get our brilliant smart home app</div>
+            <div className="header">
+              Get our brilliant smart home app
+            </div>
             <div className="footer">
               Fastest and simplest solution on market.
             </div>
@@ -119,15 +82,10 @@ function App() {
                 connected products.
               </p>
               <p>
-                Doubt merit sir the right these alone keeps. By sometimes
-                intention smallness he northward. Consisted we otherwise
-                arranging commanded discovery it explained
+              Doubt merit sir the right these alone keeps. By sometimes intention smallness he northward. Consisted we otherwise arranging commanded discovery it explained
               </p>
               <p>
-                His having within saw become ask passed misery giving. Recommend
-                questions get too fulfilled. He fact in we case miss sake.
-                Entrance be throwing he do blessing up. Hearts warmth in genius
-                do garden advice mr it garret.
+              His having within saw become ask passed misery giving. Recommend questions get too fulfilled. He fact in we case miss sake. Entrance be throwing he do blessing up. Hearts warmth in genius do garden advice mr it garret. 
               </p>
             </div>
           </div>
@@ -304,21 +262,24 @@ function App() {
               Smartify Insights
             </div>
             <div className="footer black font-smaller text-center width-60 center">
-              <p> Learn more about Smartify environment. </p>
+              <p>
+                {" "}
+                Learn more about Smartify environment.{" "}
+              </p>
             </div>
 
             <div className="posts-container">
               <div className="post">
                 <div className="header black margin-top-3 font-small bold  text-center height-30">
                   Collaboration with Yahwee
-                </div>
+                  </div>
                 <div className="footer black font-smaller text-center margin-bottom-3 margin-top-3 height-30">
                   In last months our company profits raised by 26%...
                 </div>
                 <img className="post-photo" src={postPhoto1} alt="" />
               </div>
               <div className="post">
-                <div className="header black margin-top-3 font-small bold text-center height-30">
+              <div className="header black margin-top-3 font-small bold text-center height-30">
                   Creating perfect smart home system
                 </div>
                 <div className="footer black font-smaller text-center margin-bottom-3 margin-top-3 height-30">
@@ -327,11 +288,11 @@ function App() {
                 <img className="post-photo" src={postPhoto2} alt="" />
               </div>
               <div className="post">
-                <div className="header black margin-top-3 bold font-small  text-center height-30">
+              <div className="header black margin-top-3 bold font-small  text-center height-30">
                   We are looking for new team members
                 </div>
                 <div className="footer black font-smaller text-center margin-bottom-3 margin-top-3 height-30">
-                  Would you like to join us?
+                  Would you like to join us? 
                 </div>
                 <img className="post-photo" src={postPhoto3} alt="" />
               </div>
@@ -348,69 +309,71 @@ function App() {
             <div className="footer black font-smaller text-center margin-bottom-10 width-60 margin-auto">
               <p>
                 {" "}
-                Smartify offers all-around solution for smart environments.{" "}
+                Smartify offers all-{" "}
               </p>
             </div>
 
-            <div className="solution margin-bottom-10">
-              <div className="solution-item margin-bottom-10">
+            <div className="flex flex-wrap margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-blue"
                   src={phones}
                   alt=""
                 />
                 <p>
-                  <div className="small-header text-center">iOS & Android</div>
-                  <div className="footer black font-smaller text-center center width-80">
-                    Intuitive smart home interfaces based on what we’ve learned
-                    developing award winning iOS and Android apps that have been
-                    enjoyed by millions of users around the world.
+                  <div className="small-header text-center">
+                  iOS & Android
                   </div>
+                  <div className="footer black font-smaller text-center center width-80">
+                  Intuitive smart home interfaces based on what we’ve learned developing award winning iOS and Android apps that have been enjoyed by millions of users around the world.
+                  </div>
+
                 </p>
               </div>
-              <div className="solution-item margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-green"
                   src={cloud}
                   alt=""
                 />
                 <p>
-                  <div className="small-header text-center">Cloud services</div>
-                  <div className="footer black font-smaller text-center center width-80">
-                    Fully-managed cloud services that seamlessly integrate with
-                    your existing systems to support features like
-                    notifications, emails, activity feeds, accounts and
-                    settings, etc.
+                  <div className="small-header text-center">
+                  Cloud services
                   </div>
+                  <div className="footer black font-smaller text-center center width-80">
+                  Fully-managed cloud services that seamlessly integrate with your existing systems to support features like notifications, emails, activity feeds, accounts and settings, etc.
+                  </div>
+
                 </p>
               </div>
-              <div className="solution-item margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-orange"
                   src={analytics}
                   alt=""
                 />
                 <p>
-                  <div className="small-header text-center">Analytics</div>
-                  <div className="footer black font-smaller text-center center width-80">
-                    Deep insights into how your apps and hardware products can
-                    be improved based on analysis of user interaction data and
-                    qualitative reviews.
+                  <div className="small-header text-center">
+                  Analytics
                   </div>
+                  <div className="footer black font-smaller text-center center width-80">
+                  Deep insights into how your apps and hardware products can be improved based on analysis of user interaction data and qualitative reviews.
+                  </div>
+
                 </p>
               </div>
-              <div className="solution-item margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-red"
                   src={upgrade}
                   alt=""
                 />
                 <p>
-                  <div className="small-header text-center">Upgrades</div>
+                  <div className="small-header text-center">
+                  Upgrades
+                  </div>
                   <div className="footer black font-smaller text-center center width-80">
-                    Experiences that are always improving with new features and
-                    kept up-to-date with the latest phones, OS upgrades, and all
-                    of the changes in the connected ecosystem.
+                  Experiences that are always improving with new features and kept up-to-date with the latest phones, OS upgrades, and all of the changes in the connected ecosystem.
                   </div>
                 </p>
               </div>

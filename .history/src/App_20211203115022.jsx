@@ -55,7 +55,7 @@ function App() {
           ""
         )}
 
-        {!toggleNavbar && window.innerWidth > 800 ? (
+        {toggleNavbar && window.innerWidth > 800 ? (
           <div className="navbar-item button navbar-item-button">
             Get started
           </div>
@@ -352,8 +352,8 @@ function App() {
               </p>
             </div>
 
-            <div className="solution margin-bottom-10">
-              <div className="solution-item margin-bottom-10">
+            <div className="flex flex-wrap margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-blue"
                   src={phones}
@@ -368,7 +368,7 @@ function App() {
                   </div>
                 </p>
               </div>
-              <div className="solution-item margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-green"
                   src={cloud}
@@ -384,7 +384,7 @@ function App() {
                   </div>
                 </p>
               </div>
-              <div className="solution-item margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-orange"
                   src={analytics}
@@ -399,7 +399,7 @@ function App() {
                   </div>
                 </p>
               </div>
-              <div className="solution-item margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-red"
                   src={upgrade}

@@ -386,14 +386,6 @@ a {
   display: none;
 }
 
-.solution{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.solution-item{
-  width: 50%;
-}
 
 @media only screen and (max-width: 800px) {
 
@@ -480,9 +472,7 @@ a {
 
   .icon {
     width: 16vmin;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 2vmin;
+    margin-right: 3vmin;
   }
 
   .text-container-column {
@@ -501,19 +491,7 @@ a {
   }
 
   .font-smaller{
-    font-size: 4vmin;
+    font-size: 3vmin;
   }
-
-  .posts-container{
-    flex-direction: column;
-  }
-  
-.solution{
-  flex-direction: column;
-}
-
-.solution-item{
-  width: 100%;
-}
 
 }

@@ -387,12 +387,7 @@ a {
 }
 
 .solution{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.solution-item{
-  width: 50%;
+  display: f;
 }
 
 @media only screen and (max-width: 800px) {
@@ -507,13 +502,5 @@ a {
   .posts-container{
     flex-direction: column;
   }
-  
-.solution{
-  flex-direction: column;
-}
-
-.solution-item{
-  width: 100%;
-}
 
 }

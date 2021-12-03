@@ -391,10 +391,6 @@ a {
   flex-wrap: wrap;
 }
 
-.solution-item{
-  width: 50%;
-}
-
 @media only screen and (max-width: 800px) {
 
   .navbar-icon{
@@ -507,13 +503,5 @@ a {
   .posts-container{
     flex-direction: column;
   }
-  
-.solution{
-  flex-direction: column;
-}
-
-.solution-item{
-  width: 100%;
-}
 
 }

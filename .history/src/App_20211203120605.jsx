@@ -399,7 +399,7 @@ function App() {
                   </div>
                 </p>
               </div>
-              <div className="solution-item margin-bottom-10">
+              <div className="width-50 margin-bottom-10">
                 <img
                   className="icon center background-red"
                   src={upgrade}
