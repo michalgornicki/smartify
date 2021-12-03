@@ -45,10 +45,10 @@ function App() {
               <div className="navbar-item" onClick={() => setToggleNavbar(false)}>Solution</div>
             </a>
             <a href="#container-6">
-              <div className="navbar-item" onClick={() => setToggleNavbar(false)}>Features</div>
+              <div className="navbar-item" onClick={setToggleNavbar(false)}>Features</div>
             </a>
             <a href="#container-5">
-              <div className="navbar-item" onClick={() => setToggleNavbar(false)}>Blog</div>
+              <div className="navbar-item" onClick={setToggleNavbar(false)}>Blog</div>
             </a>
           </div>
         ) : (

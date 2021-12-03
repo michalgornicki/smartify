@@ -42,13 +42,13 @@ function App() {
         {toggleNavbar || window.innerWidth > 800 ? (
           <div className="navigation">
             <a href="#container-3">
-              <div className="navbar-item" onClick={() => setToggleNavbar(false)}>Solution</div>
+              <div className="navbar-item" onClick={}>Solution</div>
             </a>
             <a href="#container-6">
-              <div className="navbar-item" onClick={() => setToggleNavbar(false)}>Features</div>
+              <div className="navbar-item">Features</div>
             </a>
             <a href="#container-5">
-              <div className="navbar-item" onClick={() => setToggleNavbar(false)}>Blog</div>
+              <div className="navbar-item">Blog</div>
             </a>
           </div>
         ) : (
